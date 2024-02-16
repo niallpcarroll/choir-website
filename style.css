@@ -1,0 +1,121 @@
+body {
+    background-color: linen;
+    padding-left: 25px;
+    
+}
+
+h1, h2 {
+    color: rgb(113, 23, 23);
+    text-align: center;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+h3::first-letter {
+    color: rgb(113, 23, 23);
+    font-size: 130%;
+}
+
+li {
+    line-height: 1.5;
+    padding-left: 10px;
+}
+
+footer {
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+#use_note {
+    font-style: italic;
+    text-align: center;
+}
+
+.alphabet {
+    list-style-type: none;
+    margin:50px auto 0;
+    padding:0;
+    padding-bottom: 40px;
+    cursor: pointer;
+    width:80%;
+    text-align:center;
+}
+
+.alphabet li {
+    float:left;
+    margin:0;
+    padding:0;
+    border-right:1px solid darkgrey;
+    font-size: 13px;
+    -moz-box-sizing:border-box;
+    color:black;
+    display:inline-block;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    width:3.84%;
+}
+
+.alphabet li:last-child {
+    border-right: none;
+}
+
+.alphabet li:hover {
+    color:rgb(113, 23, 23);
+    background-color: lightgrey;
+}
+
+.menu-container {
+    display: inline-flex;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    
+}
+
+#mass-propers {
+    width: 21%;
+    padding-left: 6%;
+    padding-right: 6%;
+}
+#mass-propers:hover {
+   background-color: rgb(226, 225, 223);
+   border-radius: 30%;
+}
+
+#mass-ordinaries {
+    width: 33%;
+}
+
+#mass-ordinaries:hover {
+    background-color: rgb(226, 225, 223);
+    border-radius: 30%;
+}
+
+#other-links {
+    width: 33%;
+}
+
+#other-links:hover {
+    background-color: rgb(226, 225, 223);
+    border-radius: 30%;;
+}
+
+.chant-div {
+    width: 90%;
+    padding-bottom: 30px;
+}
+
+.documents-div {
+    width: 90%;
+    padding-bottom: 30px;
+}
+
+@media (max-width: 600px) {
+.alphabet {
+    width: 100%;
+    margin: 0;
+    
+}

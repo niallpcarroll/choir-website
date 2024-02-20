@@ -41,6 +41,7 @@ footer {
     cursor: pointer;
     width:80%;
     text-align:center;
+    display: inline;
 }
 
 .alphabet li {
@@ -103,6 +104,14 @@ footer {
     border-radius: 30%;;
 }
 
+#main-div h3 {
+  padding-left: 5%;
+}
+
+#main-div ul {
+    padding-left: 10%;
+}
+
 .chant-div {
     width: 90%;
     padding-bottom: 30px;
@@ -113,9 +122,28 @@ footer {
     padding-bottom: 30px;
 }
 
-@media (max-width: 600px) {
-.alphabet {
-    width: 100%;
-    margin: 0;
+@media only screen and (max-width: 600px) {
+    #alphabet1 {
+        width: 100%;
+        display: block;
+        padding-left: 25%;
+        padding-right: 25%;
     
-}
+    }
+    #alphabet2 {
+        width: 100%;
+        display: block;
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+
+    .menu-container {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 33%;
+        
+    }
+        
+    }
+

@@ -1,15 +1,21 @@
 body {
     background-color: linen;
-    padding-left: 25px;
+    padding-left: 30px;
     
 }
 
-h1, h2 {
+
+h1 {
     color: rgb(113, 23, 23);
+    width: 90%;
     text-align: center;
+    
+    
 }
 
 h2 {
+    color: rgb(113, 23, 23);
+    text-align: center;
     text-decoration: underline;
 }
 
@@ -26,11 +32,17 @@ li {
 footer {
     text-align: left;
     padding-bottom: 10px;
+    padding-top: 30px;
 }
 
 #use_note {
     font-style: italic;
     text-align: center;
+    width: 90%;
+}
+
+#home {
+    text-decoration: none;
 }
 
 .alphabet {

@@ -7,7 +7,7 @@ body {
 
 h1 {
     color: rgb(113, 23, 23);
-    width: 90%;
+    width: 100%;
     text-align: center;
     
     
@@ -15,6 +15,7 @@ h1 {
 
 h2 {
     color: rgb(113, 23, 23);
+    width: 100%;
     text-align: center;
     text-decoration: underline;
 }
@@ -27,6 +28,7 @@ h3::first-letter {
 li {
     line-height: 1.5;
     padding-left: 10px;
+    width: 85%;
 }
 
 footer {
@@ -38,7 +40,7 @@ footer {
 #use_note {
     font-style: italic;
     text-align: center;
-    width: 90%;
+    width: 100%;
 }
 
 #home {
@@ -125,12 +127,12 @@ footer {
 }
 
 .chant-div {
-    width: 90%;
+    width: 100%;
     padding-bottom: 30px;
 }
 
 .documents-div {
-    width: 90%;
+    width: 100%;
     padding-bottom: 30px;
 }
 

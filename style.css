@@ -18,7 +18,7 @@ h1 {
 }
 
 #home, #home:hover, #home:visited, #home:active {
-    color: inherit;
+    color: rgb(113, 23, 23);
     text-decoration: none;
 }
 
@@ -32,7 +32,7 @@ h2 {
 }
 
 h2 > a, a:hover, a:visited, a:active {
-    color: inherit;
+    color: rgb(113, 23, 23);
     text-decoration: none;
 }
 

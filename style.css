@@ -8,6 +8,9 @@ html{
     scroll-behavior: smooth;
 }
 
+header {
+    text-align: center;
+}
 
 h1 {
     color: rgb(113, 23, 23);

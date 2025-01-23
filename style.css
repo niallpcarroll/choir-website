@@ -112,32 +112,18 @@ footer {
     
 }
 
-#mass-propers {
+#mass-propers, #mass-ordinaries, #other-links {
     width: 21%;
     padding-left: 6%;
     padding-right: 6%;
-}
-#mass-propers:hover {
-   background-color: rgb(226, 225, 223);
-   border-radius: 30%;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-#mass-ordinaries {
-    width: 33%;
-}
-
-#mass-ordinaries:hover {
-    background-color: rgb(226, 225, 223);
-    border-radius: 30%;
-}
-
-#other-links {
-    width: 33%;
-}
-
-#other-links:hover {
-    background-color: rgb(226, 225, 223);
-    border-radius: 30%;;
+.link:hover {
+    background-color: rgb(113, 23, 23);
+    color: rgb(226, 225, 223);
+    border-radius: 40%;
 }
 
 #main-div h3 {

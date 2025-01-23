@@ -26,6 +26,14 @@ h1 {
 }
 
 
+a {
+    text-decoration: none;
+}
+
+a :visited {
+    text-decoration: none;
+    
+}
 
 h2 {
     color: rgb(113, 23, 23);

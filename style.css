@@ -1,131 +1,72 @@
-body {
-    background-color: linen;
-    padding-left: 30px;
-    
-}
+/* ---------- Global Styles ---------- */
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
+body {
+    background-color: linen;
+    color: black;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------- Page Container (for links.html, etc.) ---------- */
+
+.page-container {
+    max-width: 1000px; /* centers content */
+    margin: 0 auto;
+    padding: 0 30px; /* horizontal padding */
+}
+
+/* ---------- Headings ---------- */
+
 header {
     text-align: center;
+    padding: 20px 0;
 }
 
 h1 {
+    font-family: 'Playfair Display', serif; /* slightly curvy, artistic */
+    font-weight: 700;
+    font-size: 2.5em;
+    letter-spacing: 1px;
     color: rgb(113, 23, 23);
-    width: 100%;
     text-align: center;
-    
-    
-}
-
-#home, #home:hover, #home:visited, #home:active {
-    color: rgb(113, 23, 23);
-    text-decoration: none;
-}
-
-
-a {
-    text-decoration: none;
-}
-
-a :visited {
-    text-decoration: none;
-    
+    margin-bottom: 0.5em;
 }
 
 h2 {
     color: rgb(113, 23, 23);
-    width: 100%;
     text-align: center;
     text-decoration: underline;
+    margin-bottom: 0.5em;
 }
 
-h2 > a, a:hover, a:visited, a:active {
-    color: rgb(113, 23, 23);
-    text-decoration: none;
+h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    text-align: left;
+    color: black;
 }
-
 
 h3::first-letter {
     color: rgb(113, 23, 23);
     font-size: 130%;
 }
 
-li {
-    line-height: 1.5;
-    padding-left: 10px;
-    width: 85%;
-}
+/* ---------- Links ---------- */
 
-footer {
-    text-align: left;
-    padding-bottom: 10px;
-    padding-top: 30px;
-}
-
-#use_note {
-    font-style: italic;
-    text-align: center;
-    width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-#home {
+a,
+a:visited,
+a:hover,
+a:active {
+    color: rgb(113, 23, 23);
     text-decoration: none;
-}
-
-.alphabet {
-    list-style-type: none;
-    margin:50px auto 0;
-    padding:0;
-    padding-bottom: 40px;
-    cursor: pointer;
-    width:80%;
-    text-align:center;
-    display: inline;
-}
-
-.alphabet li {
-    float:left;
-    margin:0;
-    padding:0;
-    border-right:1px solid darkgrey;
-    font-size: 13px;
-    -moz-box-sizing:border-box;
-    color:black;
-    display:inline-block;
-    -webkit-box-sizing:border-box;
-    -moz-box-sizing:border-box;
-    box-sizing:border-box;
-    width:3.84%;
-}
-
-.alphabet li:last-child {
-    border-right: none;
-}
-
-.alphabet li:hover {
-    color:rgb(113, 23, 23);
-    background-color: lightgrey;
-}
-
-.menu-container {
-    display: inline-flex;
-    padding: 10px;
-    width: 100%;
-    text-align: center;
-    
-}
-
-#mass-propers, #mass-ordinaries, #other-links {
-    width: 21%;
-    padding-left: 6%;
-    padding-right: 6%;
-    padding-top: 10px;
-    padding-bottom: 10px;
 }
 
 .link:hover {
@@ -134,62 +75,153 @@ footer {
     border-radius: 40%;
 }
 
+/* ---------- Lists ---------- */
+
+li {
+    line-height: 1.5;
+    padding-left: 10px;
+    width: 85%;
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+    text-align: center;
+    padding: 30px 0 10px;
+    margin-top: auto;
+}
+
+/* ---------- Notes ---------- */
+
+#use_note {
+    font-style: italic;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+/* ---------- Alphabet Navigation ---------- */
+
+.alphabet {
+    list-style-type: none;
+    margin: 50px auto 40px;
+    padding: 0;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.alphabet li {
+    flex: 1 0 3.8%;
+    text-align: center;
+    font-size: 13px;
+    border-right: 1px solid darkgrey;
+    box-sizing: border-box;
+}
+
+.alphabet li:last-child {
+    border-right: none;
+}
+
+.alphabet li:hover {
+    color: rgb(113, 23, 23);
+    background-color: lightgrey;
+}
+
+/* ---------- Menu Container (Top Links) ---------- */
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 10px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#mass-propers,
+#mass-ordinaries,
+#other-links {
+    flex: 1 0 200px;
+    padding: 10px;
+}
+
+/* ---------- Content Divs ---------- */
+
 #main-div h3 {
-  padding-left: 5%;
+    padding-left: 5%;
 }
 
 #main-div ul {
     padding-left: 10%;
 }
 
-.chant-div {
-    width: 100%;
-    padding-bottom: 30px;
-}
-
-.mass-div {
-    width: 100%;
-    padding-bottom: 30px;
-}
-
-.english-div {
-    width: 100%;
-    padding-bottom: 30px;
-}
-
+.chant-div,
+.mass-div,
+.english-div,
 .documents-div {
     width: 100%;
     padding-bottom: 30px;
 }
 
+/* ---------- Article Styling ---------- */
+
+#main-div article {
+    background-color: #fff8f0; /* subtle background to distinguish articles */
+    padding: 15px 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1); /* subtle shadow */
+    max-width: 800px;
+    margin-left: auto;  /* center horizontally */
+    margin-right: auto;
+}
+
+#main-div article h3 {
+    margin-top: 0;
+    margin-bottom: 0.3em;
+}
+
+/* ---------- Responsive Layout ---------- */
+
+@media (max-width: 900px) {
+    .page-container {
+        padding: 0 20px;
+    }
+}
 
 @media (max-width: 600px) {
-    #alphabet1 {
+    .alphabet {
         width: 100%;
-        display: block;
-        padding-left: 25%;
-        padding-right: 25%;
-    
-    }
-    #alphabet2 {
-        width: 100%;
-        display: block;
-        padding-left: 25%;
-        padding-right: 25%;
+        justify-content: center;
     }
 
     .menu-container {
-        width: 100%;
-        display: block;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 25%;
-        padding-right: 25%;
-        white-space: nowrap;
-        
-        
-    }
-        
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
     }
 
+    #mass-propers,
+    #mass-ordinaries,
+    #other-links {
+        flex: 1 0 100%;
+        padding: 5px 0;
+    }
+
+    #main-div h3,
+    #main-div ul {
+        padding-left: 0;
+    }
+
+    .page-container {
+        padding: 0 10px;
+    }
+
+    #main-div article {
+        max-width: 100%;
+        padding: 10px 15px;
+    }
+}
